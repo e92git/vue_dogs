@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url("~@/assets/fonts/IBM_Plex_Sans/Ibmplexsans.woff") format("woff2"),
+    url("~@/assets/fonts/IBM_Plex_Sans/Ibmplexsans.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 101%;
+  background-color: #151419;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+}
+
+#app {
+  font-family: "IBM Plex Sans", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #ffffff;
+}
+
+#nav {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.55);
+  height: 100px;
+  .nav__container {
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  a {
+    &:first-child img{
+      width: 118px;
+      height: 27px;
+    }
+    &.router-link-exact-active {
+      color: $white;
+    }
+  }
+}
